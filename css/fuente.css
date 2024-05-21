@@ -75,18 +75,23 @@
   .titulo{
     font-family: "Roboto Slab", serif;
     font-size: 2rem;
-    font-style: normal;
+    font-style: light ;
+    font-weight: 300;
 }
-    /*slab*/
   
-
   .sub-titulo{
-    font-family: "Roboto Slab", serif;
+    font-family: "Roboto Mono", serif;
     font-size: 1.25rem;
-    font-style: normal;
+    font-style: medium ;
 }
   
   .texto-plano {
+    font-family: "Roboto",sans-serif;/*roboto regular 18*/
+    font-size: 1.12rem;
+    font-style: normal;
+  }
+  .texto-grande{
     font-family: "Roboto Mono",sans-serif;
-    font-size: 1.10rem;
+    font-size: 4rem;
+    font-style: normal;
   }
