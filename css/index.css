@@ -4,6 +4,7 @@
     justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
     align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
     background-color: var(--color4);
+    margin-bottom: 4rem;
         
 }
 .pagina_uno img{
@@ -17,21 +18,21 @@ color: var(--color5);
 }
 .pagina_uno_texto P{
 margin: auto ;
-text-shadow: 4px 4px 2px black;
+display: inline-block;
+background-color: rgba(0, 0, 0, 0.3);
 }
 
 
 /* pagina dos*/
 .pagina_dos{
-    text-align: center; 
-    margin: 3em auto ;  
+    text-align: center;   
 }
 .lista {
     text-align: left;
     margin: auto auto;
     padding: 4em;
     border-radius: 30px;
-    margin-top: 2em;
+    margin-top: 4rem;
     border: 4px solid var(--color4); 
 }
 
@@ -40,19 +41,18 @@ text-shadow: 4px 4px 2px black;
     margin-bottom: 1.5em;
 }
 .lista p{
-    margin-bottom: 1.5em;
+    margin-bottom: 4rem;
 }
+
 /*pagina tres */
 
 .pagina_tres{
     text-align: center;
-    margin: 3em auto;
 }
 
 .pagina_tres p{
 width: 60%;
 margin: 3em auto;
-text-align: left;
 }
 
 .pagina_tres p:first-child {
@@ -61,34 +61,46 @@ text-align: left;
     }
     
 .pagina_tres img{
-width: 63%;
+width: 70%;
 }
 
 /*pagina 4*/
 .pagina_cuatro{
 text-align: center; 
-margin: 3em auto;
+
+}
+.pagina_cuatro .box-titulo{
+    margin-bottom: 4rem;
 }
 
 .pagina_cuatro p,button{  
 margin-bottom: 1.5em;
 }
 
+.pagina_cuatro .pie{
+    margin: 4rem;
+}
 .button-style {
-    background-color: var(--color1);
-    width: 35%;
-    height: 4rem;
-    border-radius: 30px;
-    color:var(--color5);
+    background-color: var(--color2);
+    color:var(--color3);
+    border-radius: 25px;
     font-size: 1.5rem;
     border: none; 
-    padding: 0.5rem 1rem; 
-    margin: 1 auto; 
+    padding: 1rem 2rem; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-style:hover {
+    background-color: var(--color1);
+}
+
+.button-style span {
+    margin-left: 0.5rem;
 }
 
 /*pagina 5*/
 .pagina-cinco{
-margin: 3em auto;
 display: grid;
 grid-template-areas: 
 "titulo subTitulo subTitulo subTitulo"
@@ -98,10 +110,13 @@ grid-template-areas:
 }
 .pagina-cinco .item-uno{
 grid-area: titulo;
-margin-bottom: 1em;
+margin-bottom: 0.5em;
 }
 .pagina-cinco .item-dos{
     grid-area: subTitulo;
+    text-align: justify;
+    margin-top: 1rem;
+    margin-left: 1rem ;
 }
 .pagina-cinco .item-tres{
     grid-area: texto;
@@ -111,44 +126,45 @@ margin-bottom: 1em;
    margin-bottom: 1em;
 }
 
-
+.item-cuatro{
+    margin: 1rem;
+}
 .pagina-cinco .imagen-box{
     grid-area: imagen;
     display: flex;
     justify-content: center; /* Centra horizontalmente */
     align-items: start; /* Centra verticalmente */
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 .pagina-cinco .imagen-box img{
     width: 50%;
-    border: 1px solid #000055;
-    border-radius: 30px 30px 30px 30px;
+   
 }
 .pagina-cinco .item-cuatro{
     grid-area: pie;
     text-align: center;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 .pagina-cinco .item-cinco{
         grid-area: boton;
         display: flex;
         justify-content: center;
         align-items: center;
-    
+        margin-top: 3rem;
 }
 /*pagina seis*/
 
 .pagina-seis{
-margin: 3em auto;
 display: grid;
 grid-template-columns: 5rem 1fr 3rem 1fr 3rem 1fr 3rem 1fr 5rem ;
 grid-template-rows: 1fr 1fr 1fr 1fr;
-
 }
 
 .cabecera{
     grid-column: 1/10;
     grid-row: 1/2;
+    text-align:center;
+    
 }
 .testimonio-uno{
 grid-column: 2/4;
@@ -186,7 +202,7 @@ grid-row: 3/4;
 }
 .nombre {
     background-color: var(--color1);
-    color: var(--color5);
+    color: var(--color3);
     border-radius: 10px;
     margin-top: 2rem;
     padding: .1rem;
@@ -196,24 +212,23 @@ grid-row: 3/4;
 
 /* pagina 7*/
 .pagina-siete{
-    margin: 3em auto;
     text-align: center;
 }
-.pagina-siete p {
-    margin: 1rem auto;
-}
-.pagina-siete p:nth-child(2) {
+
+.pagina-siete .recuadro{
     border: 2px solid var(--color1);
     border-radius: 30px;
     width: 50%;
     text-align: left;
-    padding: 1rem;
-    
+    padding: 3rem;
+    margin: 4rem auto;
 }
-
+.pagina-siete p{
+    margin-bottom: 3rem;
+}
 #myForm {
     width: 80%;
-    margin: 0 auto;
+    margin: 2rem auto;
 }
 
 .form-group {
@@ -221,7 +236,7 @@ grid-row: 3/4;
 }
 
 label {
-    display: block;
+    display: none; /* Ocultar las etiquetas para usar placeholders en su lugar */
 }
 
 input[type="text"],
@@ -229,23 +244,38 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    height: 150px; /* Ajusta esta altura según tus necesidades */
 }
 
 .submit {
     text-align: right; 
 }
-.boton-submit{
+
+.boton-submit {
     width: 20%;
     height: 3em;
-    background-color: var(--color1);
-    color: var(--color5);
+    background-color: var(--color2);
+    color: var(--color3);
     border-radius: 10px;
+    border: none; /* Quitar el borde del botón */
+    cursor: pointer; /* Cambiar el cursor para indicar que es clicable */
+    transition: background-color 0.3s;
 }
 
+/* Opcional: Cambiar el color del botón al pasar el cursor sobre él */
+.boton-submit:hover {
+    background-color: var(--color1); /* Asegúrate de definir esta variable en tus estilos */
+}
+
+
 .pagina-ocho{
-    margin: 3em auto;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

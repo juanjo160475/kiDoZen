@@ -1,0 +1,246 @@
+
+
+.pagina_uno {
+    display: flex;
+    background-color: var(--color1);
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 7rem 3rem;
+    margin-bottom: 4rem;
+}
+#gradient{
+    background: #D0D9FF;
+    background: -moz-linear-gradient(left, #D0D9FF 0%, #9595D2 41%, #9595D2 100%);
+    background: -webkit-linear-gradient(left, #D0D9FF 0%, #9595D2 41%, #9595D2 100%);
+    background: linear-gradient(to right, #D0D9FF 0%, #9595D2 41%, #9595D2 100%);
+    }
+
+.pagina_uno_texto {
+    color: var(--color3);
+    text-align: center;
+    width: 50%;
+    
+}
+.pagina_uno_texto p{
+margin-bottom:1.5em ;
+}
+
+.imagen-box{
+    width: 50%;
+    margin-left: 3em;
+}
+
+.pagina_uno img {
+    border-radius: 10px;
+    width: 90%;
+
+}
+
+
+/* pagina dos */
+.pagina_dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color3);
+
+}
+
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.pagina_dos img {
+    width: 50%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-right: 2em;
+}
+
+.pagina_dos_texto {
+    width: 50%;
+    text-align: left;
+    color: var(--color2);
+}
+
+
+.pagina_dos_texto p {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* pAGINA TRES*/
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.galeria img {
+    margin: 10px;
+    max-width: 30%;
+    height: auto;
+    border-radius: 8px;
+}
+/*pagina 4*/
+
+.pagina_cuatro{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.pagina_cuatro .cuerpo {
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+}
+.cuerpo .pagina_cuatro_texto{
+  width: 50%;
+}
+
+.cuerpo .box-imagen{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+.cuerpo .box-imagen img{
+    width: 100%;
+}
+.pagina_cuatro p{
+    margin-bottom: 2rem;
+}
+.pagina_cuatro .pie{
+    width: 75%;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    list-style-type: none;
+}
+
+
+/* pagina 5*/
+.pagina_cinco {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding:  5rem 0;
+}
+
+.pagina_cinco .cuerpo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+     margin: 0 auto; /* Centrar el contenido */
+}
+
+.cuerpo .pagina_cinco_texto {
+    width: 70%;
+}
+
+.autor{
+    text-align: right;
+    margin-top: 1rem;
+}
+
+.cuerpo .box-imagen {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-imagen img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 2rem;
+}
+/*pagina seis*/
+
+.pagina_seis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.pagina_seis .cuerpo {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pagina_seis .titulo-grid{
+    margin-bottom: 2rem;
+}
+
+.pagina_seis .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático del tamaño de las columnas */
+    gap: 1.5rem; /* Espacio entre los elementos */
+}
+
+.pagina_seis .grid-item {
+    
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.pagina_seis .grid-item img {
+    max-width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+/* pagina siete */
+
+.pagina_siete {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.pagina_siete .cuerpo {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+.pagina_siete p {
+    margin-bottom: 4rem;
+}
+
+.pagina_siete .btn-mejorar-bienestar {
+    background-color: var(--color2);
+    color: var(--color3);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagina_siete .btn-mejorar-bienestar:hover {
+    background-color: var(--color1);
+}
+
+.pagina_siete .btn-mejorar-bienestar span {
+    margin-left: 0.5rem;
+}

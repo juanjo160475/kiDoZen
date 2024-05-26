@@ -83,6 +83,7 @@
     font-family: "Roboto Mono", serif;
     font-size: 1.25rem;
     font-style: medium ;
+    font-weight: 500;
 }
   
   .texto-plano {
@@ -91,7 +92,8 @@
     font-style: normal;
   }
   .texto-grande{
-    font-family: "Roboto Mono",sans-serif;
-    font-size: 4rem;
+    font-family: "Roboto Slab",sans-serif;
+    font-size: 4rem;/*65*/
     font-style: normal;
+    font-weight: 400;
   }
