@@ -73,3 +73,75 @@ header .nav-items {
   margin: 0 auto 4rem;
   width: 70%;
 }
+
+#menu{
+  display: none;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    position:relative; /* Fijar el header */
+  }
+  
+  header .logo {
+    width: 50%;
+    margin: 0 auto;
+   
+  }
+  
+  .logo img {
+    width: 40%;
+  }
+  
+  header .nav-items {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+  }
+ 
+  #menu {
+    display: block;
+    font-size: 2rem;
+    border: 3px solid var(--color2);
+    border-radius: 0.3em;
+    z-index: 2;
+  }
+  
+  #menu-cerrar {
+    display: none;
+  }
+  #menu.salir #menu-abrir {
+    display: none;
+  }
+
+  #menu.salir #menu-cerrar {
+    display: block;
+  }
+  
+  #ul-nav {
+    position: absolute;
+    display: none;
+    font-size: 2em;
+    text-align: left;
+    padding-left: 2em;
+  }
+
+ #ul-nav.visible {
+    display: block;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.8;
+    top: 0;
+    bottom: 0%;
+    z-index: 1;
+  }
+
+  body.no-scroll{
+    overflow: hidden;
+  }
+  
+}

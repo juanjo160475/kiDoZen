@@ -242,3 +242,6 @@ padding:  5rem 0;
 .pagina_siete .btn-mejorar-bienestar span {
     margin-left: 0.5rem;
 }
+
+@media screen and (max-width: 640px) {
+}

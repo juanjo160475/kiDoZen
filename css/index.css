@@ -16,8 +16,8 @@ width: 50%;
 position: absolute;
 color: var(--color5);
 }
+
 .pagina_uno_texto P{
-margin: auto ;
 display: inline-block;
 background-color: rgba(0, 0, 0, 0.3);
 }
@@ -29,7 +29,6 @@ background-color: rgba(0, 0, 0, 0.3);
 }
 .lista {
     text-align: left;
-    margin: auto auto;
     padding: 4em;
     border-radius: 30px;
     margin-top: 4rem;
@@ -65,6 +64,7 @@ width: 70%;
 }
 
 /*pagina 4*/
+
 .pagina_cuatro{
 text-align: center; 
 
@@ -73,13 +73,14 @@ text-align: center;
     margin-bottom: 4rem;
 }
 
-.pagina_cuatro p,button{  
+.pagina_cuatro p{  
 margin-bottom: 1.5em;
 }
 
 .pagina_cuatro .pie{
     margin: 4rem;
 }
+
 .button-style {
     background-color: var(--color2);
     color:var(--color3);
@@ -273,6 +274,7 @@ textarea {
     background-color: var(--color1); /* Asegúrate de definir esta variable en tus estilos */
 }
 
+/* pagina ocho*/
 
 .pagina-ocho{
 
@@ -287,3 +289,250 @@ textarea {
 }
 
 /*Desarrollo#2024*/
+
+
+@media screen and (max-width: 640px) {
+
+    .pagina_uno{
+
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+        align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+        background-color: var(--color4);
+        margin-bottom: 4rem;
+            
+    }
+    .pagina_uno img{
+        width: 100%; /* Anchura máxima */
+    }
+    .pagina_uno_texto {
+    text-align: center;      
+    width: 100%;
+    position:relative;
+    color: var(--color2);
+    }
+    
+    .pagina_uno_texto P{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0);
+    }
+
+    /* pagina dos*/
+.pagina_dos{
+    text-align: center;   
+}
+.lista {
+    text-align: left;
+    padding: 2rem;
+    border-radius: 30px;
+    margin-top: 4rem;
+    border: 1px solid var(--color4); 
+}
+/*pagina tres */
+
+.pagina_tres{
+    text-align: center;
+}
+
+.pagina_tres p{
+width: 100%;
+margin: 3em auto;
+}
+
+.pagina_tres p:first-child {
+    margin-bottom: 1em;
+    width: 100%;
+    }
+    
+.pagina_tres img{
+width: 100%;
+}
+
+/*pagina 5*/
+.pagina-cinco{
+display: grid;
+grid-template-areas: 
+"titulo titulo" 
+"subTitulo subTitulo"
+"texto texto"
+"imagen imagen"
+"pie pie"
+"boton boton";
+}
+.pagina-cinco .item-uno{
+grid-area: titulo;
+margin-bottom: 0.5em;
+}
+.pagina-cinco .item-dos{
+    grid-area: subTitulo;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+.pagina-cinco .item-tres{
+    grid-area: texto;
+    
+}
+.item-tres p{
+   margin-bottom: 1em;
+}
+
+.item-cuatro{
+    margin: 1rem;
+}
+.pagina-cinco .imagen-box{
+    grid-area: imagen;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: start; /* Centra verticalmente */
+    margin-bottom: 2rem;
+}
+.pagina-cinco .imagen-box img{
+    width: 50%;
+   
+}
+.pagina-cinco .item-cuatro{
+    grid-area: pie;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.pagina-cinco .item-cinco{
+        grid-area: boton;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+}
+/*pagina seis*/
+
+.pagina-seis{
+display: grid;
+grid-template-columns: 3rem 1fr ;
+grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.cabecera{
+    grid-column: 1/3;
+    grid-row: 1/2;
+    text-align:center;
+    
+}
+.testimonio-uno{
+grid-column: 1/3;
+grid-row: 2/3;
+align-self: flex-end;
+}
+.nombre-uno{
+    grid-column: 2/3;
+grid-row: 3/4;
+
+}
+.testimonio-dos{
+    grid-column: 1/3; 
+    grid-row: 4/5;
+    align-self: flex-end;  
+}
+.nombre-dos{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+.testimonio-tres{
+    grid-column: 1/3;
+    grid-row: 6/7;
+    align-self: flex-end;
+}
+.nombre-tres{
+    grid-column: 2/3;
+    grid-row: 7/8;
+}
+.testimonio-cuatro{
+    grid-column: 1/3;
+    grid-row: 8/9;
+    align-self: flex-end;
+}
+.nombre-cuatro
+{
+    grid-column: 2/3;
+    grid-row: 9/10;
+}
+
+.nombre {
+    background-color: var(--color1);
+    color: var(--color3);
+    border-radius: 10px;
+    padding: .1rem;
+    float: right;
+}
+
+/* pagina 7*/
+.pagina-siete{
+    text-align: center;
+}
+
+.pagina-siete .recuadro{
+    border: 2px solid var(--color1);
+    border-radius: 30px;
+    width: 100%;
+    text-align: left;
+    padding: 3rem;
+    margin: 4rem auto;
+}
+.pagina-siete p{
+    margin-bottom: 3rem;
+}
+#myForm {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: none; /* Ocultar las etiquetas para usar placeholders en su lugar */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    height: 150px; /* Ajusta esta altura según tus necesidades */
+}
+
+.submit {
+    text-align: right; 
+}
+
+.boton-submit {
+    width: 20%;
+    height: 3em;
+    background-color: var(--color2);
+    color: var(--color3);
+    border-radius: 10px;
+    border: none; /* Quitar el borde del botón */
+    cursor: pointer; /* Cambiar el cursor para indicar que es clicable */
+    transition: background-color 0.3s;
+}
+
+/* Opcional: Cambiar el color del botón al pasar el cursor sobre él */
+.boton-submit:hover {
+    background-color: var(--color1); /* Asegúrate de definir esta variable en tus estilos */
+}
+/*pagina8*/
+
+.pagina-ocho p{
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+}
