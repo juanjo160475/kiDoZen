@@ -1,7 +1,7 @@
 document.getElementById("id-nav").innerHTML=
 `
 <button id="menu">
-<span id="menu-abrir"><i class="fa-light fa-bars"></i></span>
+<span id="menu-abrir" class="fa-solid fa-bars"></span>
 <span id="menu-cerrar">X</span>
 </button>
 <ul class="ul-nav sub-titulo" id="ul-nav">
