@@ -108,6 +108,8 @@ header .nav-items {
     font-size: 2rem;
     z-index: 2;
     margin-right: 1rem;
+    background-color: var(--color3);
+    border: none;
   }
   
   #menu-cerrar {
@@ -124,9 +126,9 @@ header .nav-items {
   #ul-nav {
     position: absolute;
     display: none;
-    font-size: 2em;
+    font-size: 2rem;
     text-align: left;
-    padding-left: 2em;
+    padding-left: 2rem;
   }
 
  #ul-nav.visible {

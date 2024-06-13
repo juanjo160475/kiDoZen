@@ -99,6 +99,13 @@
   }
   @media screen and (max-width: 640px) {
 
+
+    .titulo{
+      font-family: "Roboto Slab", serif;
+      font-size: 1.30rem;
+      font-style: light ;
+      font-weight: 300;
+  }
     .texto-grande{
    
       font-size: 3rem;/*65*/
