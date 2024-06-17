@@ -146,7 +146,8 @@ padding:  5rem 0;
 
 .cuerpo .pagina_cinco_texto {
     width: 70%;
-    padding-top: 2rem;
+    text-align: justify;
+    padding-top: 4rem;
 }
 
 .autor{
