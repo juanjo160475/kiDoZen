@@ -6,16 +6,35 @@
 }
 
 .pagina_uno{
+    background-image: url(../imagenes/Home-recortada.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    margin-bottom: 6rem;
+}
+
+.pagina_uno_texto {
+    text-align: center;      
+    color: var(--color5);
+    padding-top: 55vh;
+    }
+    .pagina_uno_texto P{
+        display: inline-block;
+        background-color: rgba(0, 0, 0, 0.3);
+        }
+/*
+.pagina_uno{
 
     display:flex;
-    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
-    align-items: end; /* Centra verticalmente los elementos dentro del contenedor */
+    justify-content: center; 
+    align-items: end; 
     margin-bottom: 10rem;
 }
 
 
 .pagina_uno img{
-    width: 100%; /* Anchura máxima */
+    width: 100%; /
 }
 .pagina_uno_texto {
 text-align: center;      
@@ -29,7 +48,7 @@ padding-bottom: 15%;
 display: inline-block;
 background-color: rgba(0, 0, 0, 0.3);
 }
-
+*/
 
 /* pagina dos*/
 .pagina_dos{
@@ -320,7 +339,18 @@ background-color: var(--color5);
 @media screen and (max-width: 640px) {
 
     /* pagina uno*/
+.pagina_uno{
+    background-image: url('../imagenes/home-celular.jpg'); /* Asegúrate de que la ruta sea correcta */
+    background-size: contain; /* Ajusta la imagen para que se muestre completamente dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height:20rem ;
+}
 
+.pagina_uno_texto {
+    text-align: center;      
+    color: var(--color5);
+    padding-top:6rem;
+    }
     /* pagina dos*/
 .pagina_dos{
     text-align: center;   
@@ -427,6 +457,7 @@ justify-content: center;
 
 .pagina-seis{
 display: grid;
+gap: 1.5rem;
 grid-template-columns: 3rem 1fr ;
 grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
@@ -435,48 +466,46 @@ grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-column: 1/3;
     grid-row: 1/2;
     text-align:justify;
-    
 }
 .testimonio-uno{
-    -webkit-box-shadow: 10px -7px 21px -6px #000000; 
-box-shadow: 10px -7px 21px -6px #000000;
+border-radius: 8px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 grid-column: 1/3;
-grid-row: 2/3;
-align-self: flex-end;
+grid-row: 2/4;
+padding: 1rem ;
 }
 .nombre-uno{
 grid-column: 2/3;
-grid-row: 3/4;
-
+grid-row: 3;
 }
 .testimonio-dos{
-    -webkit-box-shadow: 11px -7px 21px -6px #F2B950; 
-    box-shadow: 11px -7px 21px -6px #F2B950;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     grid-column: 1/3; 
-    grid-row: 4/5;
-    align-self: flex-end;  
+    grid-row: 4/6; 
+    padding: 1rem ; 
 }
 .nombre-dos{
     grid-column: 2/3;
     grid-row: 5/6;
 }
 .testimonio-tres{
-    -webkit-box-shadow: 11px -7px 21px -6px #F2B950; 
-    box-shadow: 11px -7px 21px -6px #F2B950;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     grid-column: 1/3;
-    grid-row: 6/7;
-    align-self: flex-end;
+    grid-row: 6/8;
+    padding: 1rem ;
 }
 .nombre-tres{
     grid-column: 2/3;
     grid-row: 7/8;
 }
 .testimonio-cuatro{
-    -webkit-box-shadow: 11px -7px 21px -6px #F2B950; 
-    box-shadow: 11px -7px 21px -6px #F2B950;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     grid-column: 1/3;
-    grid-row: 8/9;
-    align-self: flex-end;
+    grid-row: 8/10;
+    padding: 1rem ;
 }
 .nombre-cuatro
 {
@@ -490,6 +519,7 @@ grid-row: 3/4;
     border-radius: 10px;
     padding: .1rem;
     float: right;
+    margin-bottom: 1rem;
 }
 
 /* pagina 7*/
