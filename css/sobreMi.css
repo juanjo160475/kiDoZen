@@ -1,5 +1,44 @@
-
-
+.pagina_uno {
+    display: flex;
+    background-color: var(--color1);
+    align-items: center;
+    justify-content: center;
+    padding: 7rem 3rem;
+    margin-bottom: 6rem;
+    margin-top: 3rem;
+}
+.imagen-box{
+    width: 50%;
+   
+}
+.imagen-box{
+    background-image: url(../imagenes/fotoSobreMi.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 60%;
+    height: 100vh;
+    border-radius: 10px;
+}
+.pagina_uno_texto {
+    color: var(--color3);
+    text-align: center;
+    width: 50%;
+    
+}
+.pagina_uno_texto p{
+margin-bottom:1.5em ;
+}
+#gradient{
+    background: rgba(106,184,205,1);
+    background: -moz-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(106,184,205,1)), color-stop(29%, rgba(137,137,205,1)), color-stop(100%, rgba(137,137,205,1)));
+    background: -webkit-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
+    background: -o-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
+    background: -ms-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
+    background: linear-gradient(to right, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab8cd', endColorstr='#8989cd', GradientType=1 );
+    }
+/*
 .pagina_uno {
     display: flex;
     background-color: var(--color1);
@@ -37,7 +76,7 @@ margin-bottom:1.5em ;
     width: 75%;
 
 }
-
+*/
 
 /* pagina dos */
 .pagina_dos {
@@ -115,7 +154,8 @@ text-align: justify;
     width: 45%;
     display: flex;
     justify-content: end;
-    align-items: end;
+    align-items: start;
+    padding-top: 3rem;
     
 }
 .cuerpo .box-imagen img{
@@ -244,11 +284,11 @@ padding:  5rem 0;
 }
 
 .pagina_siete .btn-mejorar-bienestar span {
+    margin-left: 0.5rem;
     background-color: var(--color3);
     border-radius: 30px;
     padding: 1rem;
     color: var(--color2);
-    margin-left:0.5rem;
 }
 
 @media screen and (max-width: 640px) {
