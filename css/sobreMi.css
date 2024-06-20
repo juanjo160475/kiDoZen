@@ -6,10 +6,11 @@
     padding: 7rem 3rem;
     margin-bottom: 6rem;
     margin-top: 3rem;
+    
 }
 .imagen-box{
     width: 50%;
-   
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 5);
 }
 .imagen-box{
     background-image: url(../imagenes/fotoSobreMi.jpeg);
@@ -23,60 +24,32 @@
     color: var(--color3);
     text-align: center;
     width: 50%;
-    
+    transform: scaleX(-1); /* Initial mirror effect */
 }
 .pagina_uno_texto p{
 margin-bottom:1.5em ;
 }
-#gradient{
-    background: rgba(106,184,205,1);
-    background: -moz-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(106,184,205,1)), color-stop(29%, rgba(137,137,205,1)), color-stop(100%, rgba(137,137,205,1)));
-    background: -webkit-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
-    background: -o-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
-    background: -ms-linear-gradient(left, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
-    background: linear-gradient(to right, rgba(106,184,205,1) 0%, rgba(137,137,205,1) 29%, rgba(137,137,205,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab8cd', endColorstr='#8989cd', GradientType=1 );
+#gradient {
+    background: linear-gradient(to right, rgba(106, 184, 205, 1) 0%, rgba(137, 137, 205, 1) 29%, rgba(137, 137, 205, 1) 100%);
+}
+
+/* Animation for mirror effect */
+@keyframes flip {
+    0% {
+        transform: scaleX(-1);
     }
-/*
-.pagina_uno {
-    display: flex;
-    background-color: var(--color1);
-    align-items: center;
-    justify-content: center;
-    padding: 7rem 3rem;
-    margin-bottom: 6rem;
-    margin-top: 3rem;
-}
-#gradient{
-    background: #D0D9FF;
-    background: -moz-linear-gradient(left, #D0D9FF 0%, #9595D2 41%, #9595D2 100%);
-    background: -webkit-linear-gradient(left, #D0D9FF 0%, #9595D2 41%, #9595D2 100%);
-    background: linear-gradient(to right, #D0D9FF 0%, #9595D2 41%, #9595D2 100%);
+    50% {
+        transform: scaleX(0);
     }
-
-.pagina_uno_texto {
-    color: var(--color3);
-    text-align: center;
-    width: 50%;
-    
-}
-.pagina_uno_texto p{
-margin-bottom:1.5em ;
+    100% {
+        transform: scaleX(1);
+    }
 }
 
-.imagen-box{
-    width: 50%;
-    display: flex;
-    justify-content: right;  
+/* Applying the animation */
+.pagina_uno_texto.animate-flip {
+    animation: flip 1s ease-in-out forwards;
 }
-
-.pagina_uno img {
-    border-radius: 10px;
-    width: 75%;
-
-}
-*/
 
 /* pagina dos */
 .pagina_dos {
@@ -187,7 +160,7 @@ padding:  5rem 0;
 .cuerpo .pagina_cinco_texto {
     width: 70%;
     text-align: justify;
-    padding-top: 4rem;
+    padding-top: rem;
 }
 
 .autor{
@@ -293,3 +266,14 @@ padding:  5rem 0;
 
 @media screen and (max-width: 640px) {
 }
+
+/*width: 20rem;
+  height: auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color:white;
+  background: rgba(255, 255, 255, .25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  border: 1.5px solid rgba(209, 213, 219, 0.3);*/

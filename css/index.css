@@ -23,32 +23,6 @@
         display: inline-block;
         background-color: rgba(0, 0, 0, 0.3);
         }
-/*
-.pagina_uno{
-
-    display:flex;
-    justify-content: center; 
-    align-items: end; 
-    margin-bottom: 10rem;
-}
-
-
-.pagina_uno img{
-    width: 100%; /
-}
-.pagina_uno_texto {
-text-align: center;      
-width: 50%;
-position: absolute;
-color: var(--color5);
-padding-bottom: 15%;
-}
-
-.pagina_uno_texto P{
-display: inline-block;
-background-color: rgba(0, 0, 0, 0.3);
-}
-*/
 
 /* pagina dos*/
 .pagina_dos{
