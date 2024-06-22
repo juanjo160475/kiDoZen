@@ -229,7 +229,6 @@ padding:  5rem 0;
 
 .pagina_siete .cuerpo {
     width: 80%;
-    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -265,10 +264,13 @@ padding:  5rem 0;
 
     .pagina_uno {
         flex-direction: column;
+        margin-top: 0;
+        padding: 0rem 0rem;
     }
     .imagen-box{
         width: 100%;
         background-size: cover;
+        background-position:right;
         margin-bottom: 2rem;
     }
    
@@ -342,7 +344,10 @@ padding:  5rem 0;
     }    
     
     /* pagina siete */
-
+    .pagina_siete .cuerpo {
+        width: 100%;
+    
+    }
 .pagina_siete .btn-mejorar-bienestar {
     font-size: 1rem;
     
