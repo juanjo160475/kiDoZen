@@ -1,21 +1,22 @@
 .pagina-uno {
     display:flex;
-    justify-content: end; /* Centra horizontalmente los elementos dentro del contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
     align-items:end; 
     background-color: var(--color4);
     margin-bottom: 6rem;
+    
 }
 .pagina-uno img{
     width: 100%;
 }
 .pagina-uno .pagina_uno_texto{
     text-align: center;      
-    width: 50%;
+    width: 70%;
     position: absolute;
     color: var(--color5);
     height: auto;
     padding: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
     border-radius: 1rem;
     font-size: 1rem;
     background: rgba(255, 255, 255, .25);
@@ -24,7 +25,7 @@
     border: 1.5px solid rgba(209, 213, 219, 0.3);
  }
 
-.pagina-uno .pagina_uno_texto p{
+.pagina-uno .pagina_uno_texto .section-titulo{
 margin-bottom: 1rem;
 }
 /* Sección de servicios dos*/

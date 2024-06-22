@@ -75,15 +75,50 @@ text-align: justify;
 /*pagina 4*/
 
 .pagina_cuatro{
-text-align: center; 
+    background-image: url('../imagenes/flor-transparente.png'); /* Imagen de fondo */
+    background-size: 30%; /* Ajusta la imagen para cubrir el header */
+    background-position: left; /* Centra la imagen */ 
+}
 
+.pagina_cuatro .contenedor{
+    text-align: center; 
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    width: 70%;
 }
 .pagina_cuatro .box-titulo{
     margin-bottom: 4rem;
 }
 
 .pagina_cuatro p{  
-margin-bottom: 1.5em;
+margin-bottom: 0.5em;
+}
+
+.pagina_cuatro .contenedor .fondos{
+    margin: 0 auto;
+    width: 40%;
+}
+.pagina_cuatro .fondos p:nth-of-type(1) {  
+    background-color: var(--color1); /* Color de fondo para el primer párrafo */
+}
+
+.pagina_cuatro .fondos p:nth-of-type(2) {  
+    background-color: var(--color4); /* Color de fondo para el segundo párrafo */
+}
+
+.pagina_cuatro .fondos p:nth-of-type(3) {  
+    background-color: var(--color2); /* Color de fondo para el tercer párrafo */
+}
+.pagina_cuatro .fondos p:nth-of-type(4) {  
+    background-color: var(--color5); /* Color de fondo para el tercer párrafo */
+}
+.pagina_cuatro .fondos p:nth-of-type(5) {  
+    background-color: var(--color1); /* Color de fondo para el tercer párrafo */
+}
+.pagina_cuatro .fondos p{
+    padding: .5rem;
+    border-radius: 10px;
+    color: var(--color3);
 }
 
 .pagina_cuatro .pie{
@@ -356,6 +391,11 @@ margin: 3em auto;
 width: 70%;
 }
 /* pagina 4*/
+
+.pagina_cuatro .contenedor .fondos{
+    margin: 0 auto;
+    width: 100%;
+}
 
 .pagina_cuatro .pie{
     margin: 0%;
