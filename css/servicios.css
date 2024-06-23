@@ -1,3 +1,73 @@
+/*probando logo implementar en header*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color3);
+    color: var(--color2);
+    padding: 0;
+    margin: 0 auto;
+}
+
+:root {
+    --color1: #9595d2;
+    --color2: #005a70;
+    --color3: #f1f0e2;
+    --color4: #f2b950;
+    --color5: #d0debb;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 1000;
+    
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Ajusta según tus necesidades */
+    padding: 0 1rem;
+    gap: 2rem; /* Espacio uniforme entre los elementos */
+}
+
+.ul-nav {
+    display: flex;
+    list-style: none;
+    gap: 2rem; /* Espacio uniforme entre los elementos */
+}
+
+.ul-nav li a {
+    text-decoration: none;
+    padding: 1rem;
+}
+.logo{
+    width: 50%;
+}
+.logo img {
+    width: 80%;; /* Ajusta según tus necesidades */
+    display: block;
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+#menu {
+    display: none;
+}
+  
+/*//////////////////////*/
 .pagina-uno {
     display:flex;
     justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */

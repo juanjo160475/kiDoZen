@@ -6,11 +6,11 @@
         <title>Inicio - Masaje Tradicional Japonés | Zen Shiatsu</title>
         <meta name="description" content="Ofrecemos sesiones de masaje Zen Shiatsu para liberar tensiones, restaurar el equilibrio del cuerpo y aliviar el estrés y la ansiedad. ¡Conoce cómo podemos ayudarte a mejorar tu bienestar físico, mental y emocional!">
         <meta name="keywords" content="Zen Shiatsu, masaje tradicional japonés, terapia holística, bienestar, equilibrio, relajación, salud">
-        <link rel="stylesheet" href="css/servicios.css">
+
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/fuente.css">
         <link rel="stylesheet" href="css/footer.css">
-        
+        <link rel="stylesheet" href="css/servicios.css">
         <!--fonts awesome-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
             <!-- google fonts-->
@@ -23,11 +23,23 @@
 <body>
     <header>
         <!-- Aquí va el contenido del encabezado -->
-        <div class="logo">
-            <img src="imagenes/logo.png" alt="">
-        </div>
+       
         <nav class="nav-items" id="id-nav">
-            
+            <button id="menu">
+                <span id="menu-abrir" class="fa-solid fa-bars"></span>
+                <span id="menu-cerrar">X</span>
+                </button>
+                <ul class="ul-nav sub-titulo" id="ul-nav">
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="sobreMi.html">SOBRE MÍ</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="imagenes/nombre-header.png" alt="">
+                </div>
+                <ul class="ul-nav sub-titulo" id="ul-nav">
+                <li><a href="servicios.html">SERVICIOS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+                </ul>
         </nav>
     </header>
 
@@ -296,7 +308,6 @@
 
     <div id="footer"></div>
 
-    <script src="js\menu.js"></script>
     <!-- Enlaza tu archivo JavaScript aquí -->
 </body>
 </html>

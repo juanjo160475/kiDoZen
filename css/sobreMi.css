@@ -1,3 +1,15 @@
+/*probando logo implementar en header*/
+header .logo {
+    width: 20%;
+    margin-left: 2rem;
+  }
+  
+  .logo img {
+    width: 80%;
+  }
+  
+/*//////////////////////*/
+
 .pagina_uno {
     display: flex;
     background-color: var(--color1);
