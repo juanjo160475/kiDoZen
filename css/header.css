@@ -25,6 +25,8 @@
   
     
   }
+
+
  /* Tu CSS existente */
 header {
   display: flex;
@@ -37,35 +39,42 @@ header {
   transition: top 0.3s; /* Transición suave */
   background-color: var(--color3); /* Fondo blanco para que sea visible al hacer scroll */
   z-index: 1000; /* Para asegurarse de que el header esté por encima de otros elementos */
-  background-image: url('../imagenes/fondoArena.png'); /* Imagen de fondo */
-  background-size: cover; /* Ajusta la imagen para cubrir el header */
-  background-position: center; /* Centra la imagen */
+  
 }
 
-header .logo {
-  width: 20%;
-  margin: 0 auto;
-}
 
-.logo img {
-  width: 50%;
-}
-
-header .nav-items {
-  margin: 0 auto 0;
-  width: 80%;
+.nav-items {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px; 
+    padding: 0 1rem;
+    gap: 2rem; 
 }
 
 .ul-nav {
   display: flex;
-  justify-content: space-evenly;
-  list-style: none;
+    list-style: none;
+    gap: 2rem; 
 }
 
 .ul-nav li a {
-  text-decoration: none;
+    text-decoration: none;
+    padding: 1rem;
   color: var(--color2);
 }
+.logo {
+  width: auto;
+  margin: 0 auto;
+}
+
+.logo img {
+  width: auto;
+  display: block;
+  height: auto;
+}
+
 
 /* Clase para ocultar el header */
 .header-hidden {

@@ -74,17 +74,19 @@ text-align: justify;
 
 /*pagina 4*/
 
-.pagina_cuatro{
-    background-image: url('../imagenes/flor-transparente.png'); /* Imagen de fondo */
-    background-size: 30%; /* Ajusta la imagen para cubrir el header */
-    background-position: left; /* Centra la imagen */ 
+.pagina_cuatro{ 
+    position: relative;
+    overflow: hidden;
 }
-
+.pagina_cuatro .flor-image{
+    position: absolute;
+    top: -2rem;
+    left: 17rem;
+    transform: rotate(90deg);
+    transform-origin: left top; 
+}
 .pagina_cuatro .contenedor{
     text-align: center; 
-    margin: 0 auto;
-    padding-bottom: 6rem;
-    width: 70%;
 }
 .pagina_cuatro .box-titulo{
     margin-bottom: 4rem;
@@ -146,7 +148,7 @@ margin-bottom: 0.5em;
     border-radius: 30px;
     padding: 1rem;
     color: var(--color2);
-
+    
 }
 
 /*pagina 5*/
@@ -157,6 +159,7 @@ grid-template-areas:
 "texto texto imagen imagen"
 "pie pie pie pie"
 "boton boton boton boton";
+overflow: hidden;
 }
 .pagina-cinco .item-uno{
 grid-area: titulo;
@@ -205,9 +208,23 @@ margin-bottom: 0.5em;
 /*pagina seis*/
 
 .pagina-seis{
-display: grid;
-grid-template-columns: 5rem 1fr 3rem 1fr 3rem 1fr 3rem 1fr 5rem ;
-grid-template-rows: 1fr 1fr 1fr 1fr;
+position: relative;
+overflow: hidden;
+}
+.pagina-seis .flor-pag-seis{
+    position: absolute;
+    bottom: 3rem;
+    left: 1rem;
+    transform: rotate(40deg);
+    transform-origin: left top;
+}
+.pagina-seis .flor-pag-seis img{
+    width: 100%;
+}
+.contenedor-pagina-seis{
+    display: grid;
+    grid-template-columns: 5rem 1fr 3rem 1fr 3rem 1fr 3rem 1fr 5rem ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .cabecera{
@@ -472,7 +489,7 @@ justify-content: center;
 }
 /*pagina seis*/
 
-.pagina-seis{
+.contenedor-pagina-seis{
 display: grid;
 gap: 1.5rem;
 grid-template-columns: 3rem 1fr ;

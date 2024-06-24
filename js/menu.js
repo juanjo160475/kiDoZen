@@ -1,5 +1,26 @@
 document.getElementById("id-nav").innerHTML=
 `
+
+<button id="menu">
+    <span id="menu-abrir" class="fa-solid fa-bars"></span>
+    <span id="menu-cerrar">X</span>
+    </button>
+    <ul class="ul-nav sub-titulo" id="ul-nav">
+    <li><a href="index.html">INICIO</a></li>
+    <li><a href="sobreMi.html">SOBRE MÍ</a></li>
+    </ul>
+    <div class="logo">
+        <img src="imagenes/nombre-header.png" alt="">
+    </div>
+    <ul class="ul-nav sub-titulo" id="ul-nav">
+    <li><a href="servicios.html">SERVICIOS</a></li>
+    <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+      
+`
+/*
+
+ANTIGUP HEADER CON SU CSS POR SI LO NECESITO
 <button id="menu">
 <span id="menu-abrir" class="fa-solid fa-bars"></span>
 <span id="menu-cerrar">X</span>
@@ -10,10 +31,65 @@ document.getElementById("id-nav").innerHTML=
 <li><a href="servicios.html">SERVICIOS</a></li>
 <li><a href="contacto.html">CONTACTO</a></li>
 </ul>
-    
-    
-`
-/*
+
+ 
+ header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8rem;
+    position: fixed; 
+    top: 0;
+    transition: top 0.3s; 
+    background-color: var(--color3); 
+    z-index: 1000; 
+    background-image: url('../imagenes/fondoArena.png'); 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  header .logo {
+    width: 20%;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    width: 50%;
+  }
+  
+  header .nav-items {
+    margin: 0 auto 0;
+    width: 80%;
+  }
+  
+  .ul-nav {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+  }
+  
+  .ul-nav li a {
+    text-decoration: none;
+    color: var(--color2);
+  }
+  
+  
+  .header-hidden {
+    top: -8rem; 
+  }
+  
+  .pagina{
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    width: 70%;
+  }
+  
+  #menu{
+    display: none;
+  }
+  
+
 document.getElementById('id-footer').innerHTML=
 `
 Redes sociales:
