@@ -429,6 +429,10 @@ width: 70%;
     padding: 1.5rem 2rem; 
    
 }
+
+.flor-image {
+    display: none; /* Ocultar la imagen de la flor */
+}
 /*pagina 5*/
 .pagina-cinco{
 display: grid;

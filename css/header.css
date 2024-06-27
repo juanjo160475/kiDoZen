@@ -28,69 +28,62 @@
 
 
  /* Tu CSS existente */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 8rem;
-  position: fixed; /* Fijar el header */
-  top: 0;
-  transition: top 0.3s; /* Transición suave */
-  background-color: var(--color3); /* Fondo blanco para que sea visible al hacer scroll */
-  z-index: 1000; /* Para asegurarse de que el header esté por encima de otros elementos */
-  
-}
-
-
-.nav-items {
-  display: flex;
-    justify-content: space-between;
+ header {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    width: 80%;
-    max-width: 1200px; 
-    padding: 0 1rem;
-    gap: 2rem; 
-}
-
-.ul-nav {
-  display: flex;
+    width: 100%;
+    height: 8rem;
+    position: fixed; 
+    top: 0;
+    transition: top 0.3s; 
+    background-color: var(--color3); 
+    z-index: 1000; 
+    background-image: url('../imagenes/fondoArena.png'); 
+    background-size: cover; 
+    background-position: center; 
+  }
+  
+  header .logo {
+    width: 30%;
+    margin: 0 auto;
+    padding-left: 3rem;
+  }
+  
+  .logo img {
+    width: 50%;
+  }
+  
+  header .nav-items {
+    margin: 0 auto 0;
+    width: 70%;
+  }
+  
+  .ul-nav {
+    display: flex;
+    justify-content: space-evenly;
     list-style: none;
-    gap: 2rem; 
-}
-
-.ul-nav li a {
+  }
+  
+  .ul-nav li a {
     text-decoration: none;
-    padding: 1rem;
-  color: var(--color2);
-}
-.logo {
-  width: auto;
-  margin: 0 auto;
-}
-
-.logo img {
-  width: auto;
-  display: block;
-  height: auto;
-}
-
-
-/* Clase para ocultar el header */
-.header-hidden {
-  top: -8rem; /* Oculta el header fuera de la vista */
-}
-
-.pagina{
-  margin: 0 auto;
-  padding-bottom: 6rem;
-  width: 70%;
-}
-
-#menu{
-  display: none;
-}
-
+    color: var(--color2);
+  }
+  
+  
+  .header-hidden {
+    top: -8rem; 
+  }
+  
+  .pagina{
+    margin: 0 auto;
+    padding-bottom: 6rem;
+    width: 70%;
+  }
+  
+  #menu{
+    display: none;
+  }
 @media screen and (max-width: 640px) {
   header {
     display: flex;
@@ -106,7 +99,7 @@ header {
   }
   
   .logo img {
-    width: 40%;
+    width: 100%;
   }
   
   header .nav-items {
