@@ -431,7 +431,9 @@ width: 70%;
     padding: 1.5rem 2rem; 
    
 }
-
+.button-style span{
+ padding: 0.5;   
+}
 .flor-image {
     display: none; /* Ocultar la imagen de la flor */
 }
