@@ -278,6 +278,7 @@ padding:  5rem 0;
    
     .pagina_uno_texto {
         width: 100%;
+
     }
 
     .pagina_uno_texto p{
@@ -346,15 +347,27 @@ padding:  5rem 0;
     }    
     
     /* pagina siete */
+    
     .pagina_siete .cuerpo {
-        width: 100%;
+        width: 90%;
     
     }
 .pagina_siete .btn-mejorar-bienestar {
     font-size: 1rem;
     
 }
+.pagina_siete .btn-mejorar-bienestar {
+   
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    
+}
 
+.pagina_siete .btn-mejorar-bienestar span {
+   font-size: .5rem;
+    padding: 1rem;
+    
+}
     
 }
 
