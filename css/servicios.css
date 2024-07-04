@@ -35,7 +35,6 @@ margin-bottom: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
     
 }
 
@@ -78,8 +77,6 @@ margin-bottom: 1rem;
     
 }
 
-
-
 .service-list-three {
     list-style: none;
     padding: 0;
@@ -117,9 +114,7 @@ margin-bottom: 1rem;
     border-radius: 8px;
 }
 /* Sección de servicios (Sección cuatro) */
-.services-section-four {
-    padding: 0;
-}
+
 
 .header-four {
     padding: 2rem;
@@ -149,10 +144,10 @@ text-align: center;
 .benefit p {
     padding-bottom: 1rem;
 }
+
 /* Sección de servicios (Sección cinco) */
 .services-section-five {
     text-align: center;
-    margin-bottom: 2rem;
 }
 
 .header-five {
@@ -166,7 +161,7 @@ text-align: center;
 .benefits-list {
     list-style: none;
     padding: 0;
-    margin: 0 auto;
+    margin: 1rem auto;
     max-width: 80%; /* Ajusta el ancho máximo de la lista */
     text-align: left; /* Alineación a la izquierda para la lista */
 }
@@ -186,38 +181,30 @@ text-align: center;
     padding: 0;
 }
 
-.cta-container {
-    margin-top: 2rem;
-}
-
-.cta-button {
+.services-section-five .button-style {
     background-color:var(--color4);
-    padding: 2rem;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
+
 }
 
-.cta-button:hover {
+.services-section-five .button-style:hover {
     background-color: #d9982a;
 }
 
-.cta-button span{
-    background-color: var(--color3);
-    border-radius: 30px;
-    padding: 1rem;
+.services-section-five .button-style span{
+    
     color: var(--color4);
-    margin-left:0.5rem;
+
 }
+
 /* Sección de servicios (Sección seis) */
 .services-section-six {
-    padding: 2rem;
+
     text-align: center;
 }
 
 .header-six {
     margin-bottom: 2rem;
-    border-bottom: 1px solid black;
+    
 }
 .header-six .recuadro{
     background-color:var(--color4);
@@ -225,6 +212,13 @@ text-align: center;
     width: 50%;
     padding: 1rem;
     margin: 2rem;
+}
+
+.header-six .borde{
+    width: 50%;
+    padding: 1rem;
+    margin: 2rem;
+    border-bottom: 1px solid black;
 }
 
 .testimonials {
@@ -236,7 +230,7 @@ text-align: center;
     width:  30%;
     margin: 1rem;
     padding: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     text-align: left;
 }
@@ -252,75 +246,63 @@ text-align: center;
 }
 
 /*pagina 7*/
-.services-section-siete {
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.about-section {
-    text-align: left;
-}
-
-.about-section h1 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
-}
-
-.about-section p {
-    font-size: 16px;
-    color: #666666;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-.about-section .highlight {
-    font-size: 18px;
-    color: #333333;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #ffcc00;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #e6b800;
-}
-
+.services-section-siete{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    }
+    
+    
+    .services-section-siete .section-siete-cuerpo {
+     display: flex;
+     justify-content:space-around;
+     margin-top: 3rem;
+    }
+    .section-siete-cuerpo .section-siete-texto{
+      width: 55%;
+    }
+    
+    .section-siete-cuerpo .section-siete-box-imagen{
+        width: 45%;
+        display: flex;
+        justify-content: end;
+        align-items: start;
+        padding-top: 3rem;
+        
+    }
+    .section-siete-cuerpo .section-siete-box-imagen img{
+        width: 80%;
+    }
+    .services-section-siete p{
+        margin-bottom: 1rem;
+    }
+    .services-section-siete .highlight{
+        width: 100%;
+        padding: 2rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        list-style-type: none;
+    }
+    
+    
 /*pagina ocho*/
 .services-section-ocho {
-    width: 100%;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 .comparison-section {
+    width: 80%;
+    margin:0 auto;
+}
+.comparison-section p{
+    padding: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
     text-align: center;
 }
 
-.comparison-section h1 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
-}
 
 .comparison-container {
     display: flex;
@@ -328,16 +310,16 @@ text-align: center;
 }
 
 .column {
-    width: 48%;
-    padding: 10px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    width: 40%;
+    padding: 1rem;
+    border-radius: 25px;
+  
 }
-
-.column h2 {
-    font-size: 20px;
-    color: #333333;
-    margin-bottom: 15px;
+.col-si{
+    border: 3px solid var(--color4);
+}
+.col-no{
+    border: 3px solid var(--color5);
 }
 
 .column ul {
@@ -346,24 +328,22 @@ text-align: center;
 }
 
 .column ul li {
-    font-size: 16px;
-    color: #666666;
-    line-height: 1.5;
-    margin-bottom: 10px;
+    
     position: relative;
-    padding-left: 20px;
+    padding: 1rem;
 }
 
-.column ul li::before {
+.column  ul li::before {
     content: "➤";
     position: absolute;
-    left: 0;
+    left: -0.5rem;
     color: #ffcc00;
 }
 
 .image-container {
-    margin-top: 20px;
+    width: 20%;
     text-align: center;
+    align-self: center;
 }
 
 .image-container img {
@@ -373,23 +353,20 @@ text-align: center;
 /*pagina 9*/
 
 .services-section-nueve {
-    width: 100%;
-    max-width: 800px;
+   
     margin: 0 auto;
-    padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
 .faq-section {
     text-align: center;
 }
 
-.faq-section h1 {
-    font-size: 24px;
-    color: #333333;
-    margin-bottom: 20px;
+.faq-section .faq-fondo {
+background-color: var(--color1);
+color: var(--color3);
+padding: 0.5rem;
+border-radius: 3px;
+margin-bottom: 2rem;
 }
 
 .faq {
@@ -439,6 +416,57 @@ text-align: center;
 
 .button-container button:hover {
     background-color: #5a4a7c;
+}
+
+/* pagina 10*/
+
+.pagina-diez {
+    background-color: var(--color3); /* Fondo según tu esquema de colores */
+    padding: 2rem;
+    text-align: center;
+}
+
+.contenedor {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.titulo-principal {
+    font-size: 1.5rem;
+    color: var(--color2);
+    margin-bottom: 1rem;
+}
+
+.beneficios {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    text-align: left;
+}
+
+.beneficios li {
+    margin-bottom: 0.5rem;
+    color: var(--color2);
+}
+
+.pregunta {
+    font-size: 1.2rem;
+    color: var(--color2);
+    margin-bottom: 1rem;
+}
+
+.boton-equilibrio {
+    background-color: var(--color4);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.boton-equilibrio span {
+    margin-left: 0.5rem;
 }
 
 /* Media Queries para responsividad */

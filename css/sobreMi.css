@@ -352,19 +352,15 @@ padding:  5rem 0;
         width: 90%;
     
     }
-.pagina_siete .btn-mejorar-bienestar {
-    font-size: 1rem;
-    
-}
-.pagina_siete .btn-mejorar-bienestar {
+.pagina_siete .button-style {
    
     padding: 1rem 1rem;
+    font-size: 0.80rem;
     font-size: 1rem;
-    
 }
 
-.pagina_siete .btn-mejorar-bienestar span {
-    padding: 0.5rem;
+ .button-style span {
+    padding: 0.30rem;
     
 }
     

@@ -127,29 +127,6 @@ margin-bottom: 0.5em;
     margin: 4rem;
 }
 
-.button-style {
-    background-color: var(--color2);
-    color:var(--color3);
-    border-radius: 25px;
-    font-size: 1.5rem;
-    border: none; 
-    padding: 1rem 2rem; 
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.button-style:hover {
-    background-color: var(--color1);
-}
-
-.button-style span {
-    margin-left: 0.5rem;
-    background-color: var(--color3);
-    border-radius: 30px;
-    padding: 1rem;
-    color: var(--color2);
-    
-}
 
 /*pagina 5*/
 .pagina-cinco{
