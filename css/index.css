@@ -326,9 +326,16 @@ background-color: var(--color5);
     justify-content: center;
     align-items: center;  
 }
-.pagina-ocho p{
-    margin: 0 auto;
-    width: 20%;
+.pagina-ocho .parrafos{
+    width: 40%;
+
+}
+.pagina-ocho .parrafos p{
+    margin-bottom: 1rem;
+}
+
+.pagina-ocho .parrafos .datos{
+    margin-bottom: 2rem;
 }
 .pagina-ocho iframe{
    margin-top: 3rem ;

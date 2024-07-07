@@ -1,16 +1,12 @@
 /*probando logo implementar en header*/
 /*//////////////////////*/
 .pagina-uno {
-    display:flex;
-    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
-    align-items:end; 
-    background-color: var(--color4);
+    background-image: url(../imagenes/SERVICIOS.png);
+    height: 125vh;
     margin-bottom: 6rem;
     
 }
-.pagina-uno img{
-    width: 100%;
-}
+
 .pagina-uno .pagina_uno_texto{
     text-align: center;      
     width: 70%;
@@ -20,7 +16,8 @@
     padding: 1rem;
     margin-bottom: 8rem;
     border-radius: 1rem;
-    font-size: 1rem;
+    top: 70vh;
+    left: 13rem;
     background: rgba(255, 255, 255, .25);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
@@ -79,21 +76,21 @@ margin-bottom: 1rem;
 
 .service-list-three {
     list-style: none;
-    padding: 0;
-    margin: 0 auto;
     max-width: 80%; /* Ajusta el ancho máximo de la lista */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    margin: 3rem;
+    padding: 3rem;
 }
 
 .service-list-three li {
     text-align: left;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
-.service-list-three :last-child{
-    margin-bottom: 5rem;
-}
+
 .service-description-three {
     margin-bottom: 1rem;
-    background-color: var(--color1) ;
+    background-color: var(--color5) ;
     padding: 2rem;
     border-radius: 30px;
 }
@@ -118,7 +115,7 @@ margin-bottom: 1rem;
 
 .header-four {
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     background-color: var(--color4);
     border-radius: 30px;
     text-align: center;
@@ -152,7 +149,7 @@ text-align: center;
 
 .header-five {
     padding: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     background-color: var(--color4);
     border-radius: 30px;
     text-align: center;
@@ -161,7 +158,7 @@ text-align: center;
 .benefits-list {
     list-style: none;
     padding: 0;
-    margin: 1rem auto;
+    margin: 3rem auto;
     max-width: 80%; /* Ajusta el ancho máximo de la lista */
     text-align: left; /* Alineación a la izquierda para la lista */
 }
@@ -183,6 +180,7 @@ text-align: center;
 
 .services-section-five .button-style {
     background-color:var(--color4);
+    color: var(--color2);
 
 }
 
@@ -353,14 +351,14 @@ text-align: center;
 /*pagina 9*/
 
 .services-section-nueve {
-   
+    text-align: center;
     margin: 0 auto;
 }
 
-.faq-section {
-    text-align: center;
-}
 
+.faq-section :first-child {
+    margin-bottom: 2rem;
+}
 .faq-section .faq-fondo-titulo {
 background-color: var(--color1);
 color: var(--color3);
@@ -391,6 +389,16 @@ margin-bottom: 2rem;
     left: 0;
     color: #ffcc00;
 }
+.faq-section :last-child{
+    margin-bottom: 2rem;
+}
+
+.services-section-nueve button{
+    background-color: var(--color1);
+}
+.services-section-nueve .button-style:hover {
+    background-color: var(--color2);
+  }
 
 /* pagina 10*/
 
@@ -405,7 +413,6 @@ margin-bottom: 2rem;
 
 .titulo-principal {
     margin: 0 auto 6rem auto;
-    width: 70%;
 }
 
 .beneficios {
@@ -437,35 +444,93 @@ margin-bottom: 2rem;
 }
 
 .pregunta {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .pagina-diez .contenedor button{
     margin-bottom:  6rem;
+    background-color: var(--color1);
 }
+.pagina-diez .contenedor .button-style:hover {
+    background-color: var(--color2);
+  }
+
 
 /* Media Queries para responsividad */
 @media (max-width: 1024px) {
     
+    /*pagina uno*/
+    .pagina-uno {
+        background-image: url(../imagenes/SERVICIOS.png);
+        height: 75vh;
+        margin-bottom: 2rem;
+        
+    }
+    .pagina-uno .pagina_uno_texto{
+    
+        width: 90%;
+        padding: 0rem;
+        margin-bottom: 0rem;
+        top: 50vh;
+        left: 1rem;
+     
+     }
+    
     /*seccion 2*/
+    
     .services-section-dos {
         flex-direction: column;
-        text-align: center;
+        justify-content: start;
+        align-items: center;
+        
     }
     
-    .text-content, .image-content {
-        flex: 1 1 100%;
+    .text-content {
+        width: 100%;
+    }
+    
+    .image-content {
+        width:  100%;
+    }
+    
+    .image-content img {
+        max-width: 100%;
+    }
+    
+    /*seccion 3*/
+    
+    .service-list-three {
+
+        max-width: 100%; /* Ajusta el ancho máximo de la lista */
+        margin: 2rem;
+        padding: 1rem;
+    }
+    
+    .service-list-three li {
+        text-align: left;
+        margin-bottom: 2rem;
+    }
+    
+    .service-description-three {
+        padding: 1rem;
+       
     }
 
-    /*seccion 3*/
-}.services-section, .services-section-three {
-    flex-direction: column;
-    text-align: center;
-}
+    /* 3 bis galeria*/
 
-.text-content, .image-content, .text-content-three {
-    flex: 1 1 100%;
-}
+    .service-galeria{
+        flex-direction: column;
+    }
+    
+    
+    
+    .service-galeria img {
+        max-width: 90%;
+        height: auto;
+    }
+
+
+
 
 /*seccion 4*/
 .benefit {
@@ -474,3 +539,4 @@ margin-bottom: 2rem;
 
 /* seccion 5*/
 
+}

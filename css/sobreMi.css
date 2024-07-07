@@ -85,6 +85,9 @@ margin-bottom:1.5em ;
 .pagina_dos_texto :last-child{
     color: var(--color1);
 }
+.pagina_dos .texto-pie{
+    text-align: center;
+}
 
 /* pAGINA TRES*/
 

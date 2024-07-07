@@ -90,11 +90,13 @@
   background-color: var(--color2);
   color:var(--color3);
   border-radius: 25px;
-  font-size: 1.5rem;
   border: none; 
   padding: 1rem 2rem; 
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: "Roboto",sans-serif;/*roboto regular 18*/
+    font-size: 1.12rem;
+    font-style: normal;
 }
 
 .button-style:hover {
