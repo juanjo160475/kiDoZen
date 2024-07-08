@@ -4,7 +4,8 @@
     background-image: url(../imagenes/SERVICIOS.png);
     height: 125vh;
     margin-bottom: 6rem;
-    
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pagina-uno .pagina_uno_texto{
@@ -457,13 +458,14 @@ margin-bottom: 2rem;
 
 
 /* Media Queries para responsividad */
-@media (max-width: 1024px) {
+@media screen and (max-width: 640px) {
     
     /*pagina uno*/
     .pagina-uno {
         background-image: url(../imagenes/SERVICIOS.png);
         height: 75vh;
         margin-bottom: 2rem;
+        background-position: center;
         
     }
     .pagina-uno .pagina_uno_texto{
@@ -533,10 +535,59 @@ margin-bottom: 2rem;
 
 
 /*seccion 4*/
-.benefit {
-    flex: 1 1 100%;
+
+.header-four {
+    padding: 1rem;
+    margin-bottom: 3rem;
+    text-align: justify;
 }
 
-/* seccion 5*/
+.benefits {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0.5rem;
+}
 
+.benefit {
+    width: 47%;
+    padding: 0.5rem;
+}
+
+
+/* seccion 5*/
+.services-section-five {
+    text-align: justify;
+}
+
+.header-five {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.benefits-list {
+    list-style: none;    
+    padding: 0;
+    margin: 1rem auto;
+    max-width: 100%; /* Ajusta el ancho máximo de la lista */
+}
+
+.benefits-list li {
+     align-items:start;
+     margin-bottom: 1rem;
+}
+
+ .button-style {
+   
+    padding: 1rem 1rem;
+    font-size: 0.80rem;
+    font-size: 1rem;
+}
+
+ .button-style span {
+    padding: 0.30rem;
+    
+}
+    /*seccion 6*/
 }
