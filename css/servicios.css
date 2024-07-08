@@ -466,6 +466,7 @@ margin-bottom: 2rem;
         height: 75vh;
         margin-bottom: 2rem;
         background-position: center;
+       
         
     }
     .pagina-uno .pagina_uno_texto{
@@ -506,6 +507,7 @@ margin-bottom: 2rem;
         max-width: 100%; /* Ajusta el ancho máximo de la lista */
         margin: 2rem;
         padding: 1rem;
+
     }
     
     .service-list-three li {
@@ -522,6 +524,7 @@ margin-bottom: 2rem;
 
     .service-galeria{
         flex-direction: column;
+        
     }
     
     
@@ -529,6 +532,7 @@ margin-bottom: 2rem;
     .service-galeria img {
         max-width: 90%;
         height: auto;
+
     }
 
 
@@ -557,7 +561,7 @@ margin-bottom: 2rem;
 
 /* seccion 5*/
 .services-section-five {
-    text-align: justify;
+    text-align: center;
 }
 
 .header-five {
@@ -578,7 +582,7 @@ margin-bottom: 2rem;
      margin-bottom: 1rem;
 }
 
- .button-style {
+.services-section-five .button-style {
    
     padding: 1rem 1rem;
     font-size: 0.80rem;
@@ -590,4 +594,175 @@ margin-bottom: 2rem;
     
 }
     /*seccion 6*/
+/* Sección de servicios (Sección seis) */
+
+
+.header-six {
+    margin-bottom: 2rem;
+    text-align:justify;
+}
+.header-six .recuadro{
+    
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.header-six .borde{
+    width: 100%;
+    padding: 1rem;
+    margin: 2rem;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.testimonial {
+    width:  90%;
+}
+
+
+.testimonial-author {
+    font-size: 0.9rem;
+    color: #666;
+    text-align: right;
+}
+
+/*pagina 7*/
+
+    
+    
+    .services-section-siete .section-siete-cuerpo {
+    
+     flex-direction: column;
+     
+    }
+    .section-siete-cuerpo .section-siete-texto{
+      width: 100%;
+    }
+    
+    .section-siete-cuerpo .section-siete-box-imagen{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .section-siete-cuerpo .section-siete-box-imagen img{
+        width: 80%;
+    }
+    
+   .services-section-ocho {
+    margin: 0 auto;
+}
+
+.comparison-section {
+    width: 80%;
+    margin:0 auto;
+}
+.comparison-section p{
+    padding: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+.comparison-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 40%;
+    padding: 1rem;
+    border-radius: 25px;
+  
+}
+.col-si{
+    border: 3px solid var(--color4);
+}
+.col-no{
+    border: 3px solid var(--color5);
+}
+
+.column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.column ul li {
+    
+    position: relative;
+    padding: 1rem;
+}
+
+.column  ul li::before {
+    content: "➤";
+    position: absolute;
+    left: -0.5rem;
+    color: #ffcc00;
+}
+
+.image-container {
+    width: 20%;
+    text-align: center;
+    align-self: center;
+}
+
+.image-container img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* pagina 8*/
+
+
+
+.comparison-section {
+    width: 80%;
+
+}
+
+
+.comparison-container {
+   flex-direction: column;
+    
+}
+
+.column {
+    width: 100%;  
+}
+.col-si{
+    border: 3px solid var(--color4);
+    margin-bottom: 2rem;
+}
+
+
+.image-container {
+    width: 100%;
+  
+}
+
+/*pagina 9*/
+
+
+.faq-section :first-child {
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+/* pagina 10*/
+
+
+
+.contenedor {
+  
+    width: 100%;
+}
+
+
+
 }
