@@ -283,6 +283,7 @@ text-align: center;
         border-radius: 8px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         list-style-type: none;
+        margin-bottom: 2rem;
     }
     
     
@@ -505,8 +506,8 @@ margin-bottom: 2rem;
     .service-list-three {
 
         max-width: 100%; /* Ajusta el ancho máximo de la lista */
-        margin: 2rem;
-        padding: 1rem;
+        margin: 0 2rem 5rem ;
+        padding: 2rem 2rem 0rem;
 
     }
     
@@ -554,10 +555,14 @@ margin-bottom: 2rem;
 }
 
 .benefit {
-    width: 47%;
-    padding: 0.5rem;
+    width: 50%;
+    padding: 0.75rem;
 }
-
+benefit .benefit-cabecera{
+    margin-bottom: 0.5rem;
+    text-align: center;
+    }
+    
 
 /* seccion 5*/
 .services-section-five {
@@ -566,14 +571,14 @@ margin-bottom: 2rem;
 
 .header-five {
     padding: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     text-align: justify;
 }
 
 .benefits-list {
     list-style: none;    
     padding: 0;
-    margin: 1rem auto;
+    margin: 4rem auto;
     max-width: 100%; /* Ajusta el ancho máximo de la lista */
 }
 
@@ -601,17 +606,21 @@ margin-bottom: 2rem;
     margin-bottom: 2rem;
     text-align:justify;
 }
+
+.header-six :first-child{
+    margin-bottom: 2rem;
+}
 .header-six .recuadro{
     
     width: 100%;
     padding: 1rem;
-    margin: 2rem;
+    margin: 0rem;
 }
 
 .header-six .borde{
     width: 100%;
     padding: 1rem;
-    margin: 2rem;
+    margin: 0rem;
 }
 
 .testimonials {
@@ -654,6 +663,8 @@ margin-bottom: 2rem;
         width: 80%;
     }
     
+    
+    /* seccion 8*/
    .services-section-ocho {
     margin: 0 auto;
 }
