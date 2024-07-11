@@ -54,14 +54,14 @@
     .pagina-uno {
         background-position: center;
         justify-content: start;
-    
+        margin-top: 0;
     }
 
     .contact-container {
         display: flex;
         flex-direction: column;
         justify-content: start;
-        margin-bottom: 4rem;
+        margin-bottom: 14rem;
         margin-left: 0rem;
     }
 
