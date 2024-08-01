@@ -299,7 +299,13 @@ padding:  5rem 0;
 
 .pagina_dos_texto {
     width: 100%;
+    text-align: justify;
 }
+.pagina_dos_texto :first-child {
+    
+    text-align: center;
+}
+
     /* pAGINA TRES*/
 
 .galeria {
@@ -316,13 +322,17 @@ padding:  5rem 0;
 
 /*pagina 4*/
 
+.pagina_cuatro{
+   
+    text-align: center;
+    }
         .pagina_cuatro .cuerpo {
      flex-direction: column;
+     text-align: justify;
     }
     .cuerpo .pagina_cuatro_texto{
       width: 100%;
     }
-    
     .cuerpo .box-imagen{
         width: 100%;
         justify-content: center;

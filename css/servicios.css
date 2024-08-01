@@ -80,7 +80,7 @@ margin-bottom: 1rem;
     max-width: 80%; /* Ajusta el ancho máximo de la lista */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    margin: 3rem;
+    margin: 3rem auto;
     padding: 3rem;
 }
 
@@ -94,6 +94,7 @@ margin-bottom: 1rem;
     background-color: var(--color5) ;
     padding: 2rem;
     border-radius: 30px;
+    text-align: center;
 }
 
 /* seccion 3 bis*/
@@ -211,6 +212,7 @@ text-align: center;
     width: 50%;
     padding: 1rem;
     margin: 2rem;
+    text-align: left;
 }
 
 .header-six .borde{
@@ -386,13 +388,14 @@ margin-bottom: 2rem;
 }
 
 .question p:nth-of-type(1)::before {
-    content: "❓";
+    content: "*";
     position: absolute;
     left: 0;
-    color: #ffcc00;
+    color: var(--color1);
+    font-size: 2rem;
 }
 .faq-section :last-child{
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .services-section-nueve button{
@@ -492,7 +495,11 @@ margin-bottom: 2rem;
     .text-content {
         width: 100%;
     }
-    
+
+    .text-content p:nth-of-type(1) {
+        text-align: center;
+    }
+
     .image-content {
         width:  100%;
     }
@@ -544,7 +551,7 @@ margin-bottom: 2rem;
 .header-four {
     padding: 1rem;
     margin-bottom: 3rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .benefits {
@@ -572,7 +579,7 @@ benefit .benefit-cabecera{
 .header-five {
     padding: 1rem;
     margin-bottom: 4rem;
-    text-align: justify;
+    
 }
 
 .benefits-list {
@@ -604,7 +611,7 @@ benefit .benefit-cabecera{
 
 .header-six {
     margin-bottom: 2rem;
-    text-align:justify;
+    
 }
 
 .header-six :first-child{
@@ -652,6 +659,7 @@ benefit .benefit-cabecera{
     .section-siete-cuerpo .section-siete-texto{
       width: 100%;
     }
+
     
     .section-siete-cuerpo .section-siete-box-imagen{
         width: 100%;
@@ -762,7 +770,7 @@ benefit .benefit-cabecera{
 
 .faq-section :first-child {
     margin-bottom: 2rem;
-    text-align: justify;
+   
 }
 
 /* pagina 10*/
