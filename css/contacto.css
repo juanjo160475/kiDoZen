@@ -56,3 +56,16 @@
     color :var(--color2);
     font-size: 1.5rem;
 }
+@media screen and (max-width: 640px) {
+    .pagina-uno {
+        margin-top: 0rem;
+    }
+   
+   
+   
+    .contact-container {
+        margin-bottom: 4rem;
+        margin-left: 0.5rem;
+    }
+
+}

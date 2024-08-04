@@ -188,20 +188,20 @@
                 los masajes, mi formación o cualquier otro punto, consultame sin miedo 👇</p>
         
         
-        <form id="myForm">
-            <div class="form-group">
-                <input type="text" placeholder="Tu nombre">
-            </div>
-            <div class="form-group">
-                <input type="email" placeholder="Tu correo electrónico">
-            </div>
-            <div class="form-group">
-                <textarea placeholder="Tu mensaje"></textarea>
-            </div>
-            <div class="submit">
-                <button type="submit" class="boton-submit">Enviar</button>
-            </div>
-        </form>
+                <form id="myForm" action="" method="POST">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="_replyto" placeholder="Tu correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <div class="submit">
+                        <button type="submit" class="boton-submit">Enviar</button>
+                    </div>
+                </form>
         
         
 
@@ -240,6 +240,7 @@
     <script src="js\menu.js"></script>
     <script src="https://kit.fontawesome.com/c4cb9f7fd0.js" crossorigin="anonymous"></script>
     <script src="js\animaciones.js"></script>
+    <script src="js/formContacto.js"></script>
 
     <!-- Enlaza tu archivo JavaScript aquí -->
 </body>
