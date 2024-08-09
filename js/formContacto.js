@@ -16,7 +16,8 @@ form.addEventListener('submit', async (e) => {
         });
 
         if (response.ok) {
-            alert('¡Formulario enviado con éxito!');
+            alert('¡Gracias por tu consulta! En breve estarás recibiendo una respuesta.\nSeguime en Instagram para estar al tanto de las novedades.\nMatías.');
+
             form.reset(); // Limpiar el formulario después del envío
         } else {
             alert('Hubo un problema al enviar el formulario. Por favor, intenta nuevamente.');
