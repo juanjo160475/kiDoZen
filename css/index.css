@@ -613,9 +613,13 @@ textarea {
 }
 /*pagina8*/
 
+.pagina-ocho .parrafos{
+    width: 90%;
+
+}
 .pagina-ocho p{
     margin: 0 auto;
-    width: 100%;
+ 
 }
 .pagina-ocho iframe{
    width: 90%;
