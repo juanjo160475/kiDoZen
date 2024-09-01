@@ -88,6 +88,7 @@
   
   .texto-plano {
     font-family: "Roboto",sans-serif;/*roboto regular 18*/
+    font-weight: 300;
     font-size: 1.12rem;
     font-style: normal;
   }
