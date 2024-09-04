@@ -619,7 +619,7 @@ textarea {
 }
 .pagina-ocho p{
     margin: 0 auto;
- 
+ padding-top: 2rem;
 }
 .pagina-ocho iframe{
    width: 90%;
