@@ -1,5 +1,9 @@
 .pagina-uno {
-    background: url('../imagenes/PNM_2319-pequeña.jpg') no-repeat center center/cover;
+   /* background: url('../imagenes/PNM_2319-pequeña.jpg') no-repeat center center/cover;*/
+    background-image: url(../imagenes/PNM_2319-pequeña.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: start;
